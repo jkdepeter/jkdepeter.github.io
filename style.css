@@ -89,15 +89,15 @@ body {
 }
 
 .navbar {
-  background: rgba(11, 72, 107, 0.85);
+  background:  radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   display: flex;
-  justify-content: center;
+  justify-content: right;
   gap: 30px;
   padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 2px solid #f56217;
+  
 }
 
 .navbar a {
