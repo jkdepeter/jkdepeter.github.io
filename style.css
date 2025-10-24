@@ -183,11 +183,11 @@ body {
 .education-timeline {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .education-timeline .timeline-item {
-  text-align: center;
+  text-align: left;
   max-width: 600px;
   width: 100%;
 }
@@ -200,7 +200,7 @@ body {
 
 .education-timeline h4,
 .education-timeline p {
-  text-align: center;
+  text-align: left;
 }
 
 .projects {
