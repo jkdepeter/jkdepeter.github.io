@@ -1,8 +1,3 @@
-/* ===============================
-   OUTER SPACE PORTFOLIO THEME
-   Author: Dean Peter
-   =============================== */
-
 /* Outer Space Background Styles */
 body {
   font-family: 'Montserrat', Arial, sans-serif;
@@ -46,7 +41,6 @@ body {
   z-index: 1;
 }
 
-/* HERO SECTION */
 .hero {
   position: relative;
   background: rgba(11, 72, 107, 0.88);
@@ -65,10 +59,6 @@ body {
 .glow-img {
   box-shadow: 0px 0px 32px 8px #f3e99f, 0 4px 26px rgba(0,0,0,0.18);
   border: 6px solid #fff;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
 }
 
 .glow-text {
@@ -98,7 +88,6 @@ body {
   font-size: 1.08em;
 }
 
-/* NAVIGATION BAR */
 .navbar {
   background: rgba(11, 72, 107, 0.85);
   display: flex;
@@ -125,7 +114,6 @@ body {
   color: #f56217;
 }
 
-/* SECTION & CARD BASE */
 .section {
   max-width: 850px;
   margin: 36px auto;
@@ -144,13 +132,12 @@ body {
 .section h3 {
   font-size: 1.45em;
   margin-bottom: 18px;
-  color: #fff;
+  color: #0b486b;
   border-bottom: 2px solid #f56217;
   display: inline-block;
   padding-bottom: 4px;
 }
 
-/* SKILLS SECTION */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -165,31 +152,16 @@ body {
   padding: 7px 18px;
   font-size: 0.97em;
   margin-bottom: 8px;
-  box-shadow: 0 2px 8px rgba(11,72,107,0.09);
+  box-shadow:0 2px 8px rgba(11,72,107,0.09);
 }
 
-/* TIMELINE (Experience & Education Shared) */
 .timeline {
   border-left: 3px solid #f56217;
   padding-left: 20px;
-  position: relative;
 }
 
 .timeline-item {
   margin-bottom: 20px;
-  position: relative;
-}
-
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: 6px;
-  width: 10px;
-  height: 10px;
-  background: #f3e99f;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #f56217;
 }
 
 .timeline-item h4 {
@@ -199,22 +171,36 @@ body {
   color: #f3e99f;
 }
 
-.timeline-item span.date,
-.timeline-item .timeline-date {
-  display: block;
+.timeline-item span.date {
   color: #f56217;
   font-size: 0.97em;
   font-weight: 700;
-  margin-bottom: 5px;
 }
 
-.timeline-item p,
-.timeline-item ul li {
-  color: #fff;
-  font-size: 0.95em;
+/* Education Timeline Styles (centered content only for education timeline) */
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* PROJECTS SECTION */
+.education-timeline .timeline-item {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.education-timeline .timeline-date {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.education-timeline h4,
+.education-timeline p {
+  text-align: center;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -235,7 +221,6 @@ body {
   color: #f3e99f;
 }
 
-/* CONTACT SECTION */
 .contact-icons {
   margin-top: 11px;
   display: flex;
@@ -254,7 +239,6 @@ body {
   color: #f56217;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px 0;
@@ -265,7 +249,6 @@ footer {
   border-top: 1px solid #232f3e;
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 600px) {
   .container, .section {
     padding-left: 7px;
