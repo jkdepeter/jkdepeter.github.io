@@ -86,7 +86,7 @@ body {
 }
 
 .navbar {
- position: relative;
+ position: fixed;
   display: flex;
   justify-content: flex-end;
   color: #fff;
