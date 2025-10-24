@@ -43,7 +43,6 @@ body {
 
 .hero {
   position: relative;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   color: #fff;
   text-align: center;
   padding: 65px 0 40px 0;
@@ -92,10 +91,9 @@ body {
  position: relative;
   display: flex;
   justify-content: flex-end;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   color: #fff;
   text-align: right;
-  gap:30px;
+  gap:10px;
   padding: 65px 0 40px 0;
   overflow: hidden;
 }
