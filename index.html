@@ -7,63 +7,41 @@
   <!-- Google Fonts & Font Awesome for icons -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Montserrat', Arial, sans-serif;
-      background: #f7f8fa;
-      margin: 0;
-      color: #222;
-    }
-    header {
-      background: linear-gradient(90deg, #0b486b 60%, #f56217 100%);
-      color: #fff;
-      padding: 40px 0;
-      text-align: center;
-    }
-    header h1 { margin: 0 0 10px; font-size: 2.8em; }
-    header h2 { margin: 0 0 15px; font-weight: 400; }
-    .section { max-width: 950px; margin: 40px auto; padding: 30px 30px 10px 30px; background: #fff; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.10); }
-    .section h3 { font-size: 1.6em; margin-bottom: 20px; color: #0b486b;}
-    .profile-list { list-style: none; padding: 0; }
-    .profile-list li { margin-bottom: 10px; font-size: 1.09em; }
-    .skills { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 10px;}
-    .skill-badge { background: #0b486b; color: #fff; border-radius: 18px; padding: 7px 18px; font-size: 0.98em; margin-bottom: 6px;}
-    .timeline { border-left: 3px solid #0b486b; padding-left: 20px;}
-    .timeline-item { margin-bottom: 18px;}
-    .timeline-item h4 { margin: 0; font-size: 1.15em;}
-    .timeline-item span { color: #f56217; font-size: 0.97em;}
-    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px;}
-    .project-card { background: #fafafa; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); padding: 20px;}
-    .project-card h5 { margin-top: 0;}
-    .contact-icons a { color: #0b486b; margin-right: 15px; font-size: 1.7em; transition: color 0.2s;}
-    .contact-icons a:hover { color: #f56217;}
-    @media (max-width: 600px) {
-      .section { padding: 16px 7px;}
-      .projects { grid-template-columns: 1fr;}
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Dean Peter</h1>
-    <h2>Database Administrator & Application Developer</h2>
-    <ul class="profile-list" style="display:inline-block; text-align:left;">
-      <li><i class="fa fa-location-dot"></i> Port Moresby, Papua New Guinea</li>
-      <li><i class="fa fa-envelope"></i> <a style="color:#fff;text-decoration:underline" href="mailto:jkdepeter@gmail.com">jkdepeter@gmail.com</a></li>
-      <li><i class="fa fa-phone"></i> +675 81885528 / 70832410</li>
-      <li><i class="fab fa-linkedin"></i> <a style="color:#fff;text-decoration:underline" href="#">LinkedIn</a></li>
-      <li><i class="fa fa-globe"></i> <a style="color:#fff;text-decoration:underline" href="#">Portfolio Website</a></li>
-    </ul>
+  <header class="hero">
+    <div class="container">
+      <img src="profile.jpg" alt="Dean Peter Profile" class="profile-img">
+      <h1>Dean Peter</h1>
+      <h2>Database Administrator & Application Developer</h2>
+      <ul class="profile-list">
+        <li><i class="fa fa-location-dot"></i> Port Moresby, Papua New Guinea</li>
+        <li><i class="fa fa-envelope"></i> <a href="mailto:jkdepeter@gmail.com">jkdepeter@gmail.com</a></li>
+        <li><i class="fa fa-phone"></i> +675 81885528 / 70832410</li>
+        <li><i class="fab fa-linkedin"></i> <a href="#">LinkedIn</a></li>
+        <li><i class="fa fa-globe"></i> <a href="#">Portfolio Website</a></li>
+      </ul>
+    </div>
   </header>
 
-  <section class="section">
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section card">
     <h3>About Me</h3>
     <p>
       A highly skilled and motivated professional seeking new challenges and opportunities in the Information Systems and Technology field as a Full Stack Developer, with a strong focus on database management. I bring confidence, enthusiasm, and a continuous drive to expand my knowledge and technical expertise.
     </p>
   </section>
 
-  <section class="section">
+  <section id="skills" class="section card">
     <h3>Technical Skills</h3>
     <div class="skills">
       <span class="skill-badge">Operating Systems Administration</span>
@@ -87,12 +65,12 @@
     </div>
   </section>
 
-  <section class="section">
+  <section id="experience" class="section card">
     <h3>Experience</h3>
     <div class="timeline">
       <div class="timeline-item">
         <h4>ERP System Administrator <span> | International Education Agency of PNG LTD</span></h4>
-        <span>June 2022 – Current</span>
+        <span class="date">June 2022 – Current</span>
         <ul>
           <li>Developed company applications and maintained school websites.</li>
           <li>Troubleshot ERP user issues and provided first-response support.</li>
@@ -103,7 +81,7 @@
       </div>
       <div class="timeline-item">
         <h4>Full Stack Software Developer <span> | Be Pacific Digital Agency</span></h4>
-        <span>July 2021 – June 2022</span>
+        <span class="date">July 2021 – June 2022</span>
         <ul>
           <li>Developed and managed websites from design to deployment.</li>
           <li>Collaborated in an agile environment.</li>
@@ -112,7 +90,7 @@
       </div>
       <div class="timeline-item">
         <h4>Software Developer <span> | Switch Maven Limited</span></h4>
-        <span>July 2020 – June 2021</span>
+        <span class="date">July 2020 – June 2021</span>
         <ul>
           <li>Led SDLC for system development and integration.</li>
           <li>Developed databases with MongoDB and PostgreSQL.</li>
@@ -122,18 +100,18 @@
     </div>
   </section>
 
-  <section class="section">
+  <section id="projects" class="section card">
     <h3>Projects</h3>
     <div class="projects">
       <div class="project-card">
-        <h5><a href="http://www.pngworkboard.com" target="_blank" style="color:#0b486b;">PNG Workboard Portal</a></h5>
+        <h5><a href="http://www.pngworkboard.com" target="_blank">PNG Workboard Portal</a></h5>
         <p>Designed and developed the recruitment portal for ULTA Solutions Limited. Application launched after 1.5 years of development using React.js (frontend), Node.js & Express.js (backend), PostgreSQL (database).</p>
       </div>
       <!-- Add more project cards as needed -->
     </div>
   </section>
 
-  <section class="section">
+  <section id="education" class="section card">
     <h3>Education & Training</h3>
     <ul>
       <li><strong>Certificate 3 in Accounts Administration</strong>, IEA College of Tafe, Port Moresby – 2024</li>
@@ -145,7 +123,7 @@
     </ul>
   </section>
 
-  <section class="section">
+  <section id="contact" class="section card">
     <h3>Contact</h3>
     <div class="contact-icons">
       <a href="mailto:jkdepeter@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
@@ -155,7 +133,7 @@
     </div>
   </section>
 
-  <footer style="text-align:center; padding:20px 0; color:#888;">
+  <footer>
     &copy; 2025 Dean Peter. Powered by GitHub Pages.
   </footer>
 </body>
