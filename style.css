@@ -43,7 +43,7 @@ body {
 
 .hero {
   position: relative;
-  background: rgba(11, 72, 107, 0.88);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   color: #fff;
   text-align: center;
   padding: 65px 0 40px 0;
@@ -89,17 +89,13 @@ body {
 }
 
 .navbar {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  z-index: -1;
+ position: relative;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: #fff;
+  text-align: center;
+  padding: 65px 0 40px 0;
+  border-bottom: 2px solid #f56217;
   overflow: hidden;
-  pointer-events: none;
-  background:  radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  display: flex;
-  justify-content: right;
-  gap: 30px;
-  padding: 10px 0;
 }
 
 .navbar a {
@@ -179,29 +175,48 @@ body {
   font-weight: 700;
 }
 
-/* Education Timeline Styles (centered content only for education timeline) */
+/* Education Timeline Styles (matching Experience look) */
 .education-timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+  border-left: 3px solid #f56217;
+  padding-left: 20px;
+  margin-top: 10px;
 }
 
 .education-timeline .timeline-item {
-  text-align: left;
-  max-width: 600px;
-  width: 100%;
+  margin-bottom: 20px;
+  background: rgba(30, 41, 59, 0.85);
+  border-radius: 10px;
+  padding: 16px 20px;
+  border: 1px solid #232f3e;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.education-timeline .timeline-date {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.education-timeline .timeline-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(245, 98, 23, 0.25);
 }
 
-.education-timeline h4,
-.education-timeline p {
-  text-align: left;
+.education-timeline .timeline-item h4 {
+  margin: 0;
+  font-size: 1.09em;
+  font-weight: 700;
+  color: #f3e99f;
 }
+
+.education-timeline .timeline-item span.date {
+  color: #f56217;
+  font-size: 0.97em;
+  font-weight: 700;
+}
+
+.education-timeline .timeline-item p {
+  margin: 6px 0 0 0;
+  font-size: 0.96em;
+  line-height: 1.5em;
+  color: #d1d5db;
+}
+
 
 .projects {
   display: grid;
